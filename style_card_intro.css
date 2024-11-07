@@ -1,0 +1,44 @@
+/* Primary #64748b */
+
+html {
+  font-size: 10px;
+}
+
+body {
+  color: #1e293b;
+  background-color: #f8fafc;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 500px;
+  font-size: 2.4rem;
+  border-radius: 3rem;
+  border: 3px solid #1e293b;
+  padding: 3rem;
+}
+
+.card--avatar {
+  border: 1px solid #64748b;
+  border-radius: 50%;
+  margin-bottom: 3rem;
+}
+
+.card--info {
+  width: 100%;
+  margin-bottom: 1.8rem;
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+}
+
+.card--info span:first-child {
+  font-weight: bold;
+}

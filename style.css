@@ -1,44 +1,99 @@
-/* Primary #64748b */
-
 html {
   font-size: 10px;
 }
 
 body {
   color: #1e293b;
-  background-color: #f8fafc;
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .container {
+  background-image: url('https://st3.depositphotos.com/3271841/13147/i/450/depositphotos_131477174-stock-photo-simple-colorful-gradient-light-blurred.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100dvw;
   height: 100dvh;
+
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .card {
-  width: 500px;
-  font-size: 2.4rem;
-  border-radius: 3rem;
-  border: 3px solid #1e293b;
-  padding: 3rem;
+  width: 40rem;
+  background-color: #f8fafc;
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card--img {
+  position: relative;
 }
 
 .card--avatar {
-  border: 1px solid #64748b;
+  position: absolute;
+  height: 14rem;
+  width: 14rem;
+  margin: auto;
+  right: 50%;
+  bottom: -50%;
+  transform: translate(50%, -25%);
+
   border-radius: 50%;
+  border: 0.4rem solid #f8fafc;
+}
+
+.card--banner {
+  width: 100%;
+  height: 20rem;
+  border-radius: 2rem 2rem 0rem 0rem;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.card--content {
   margin-bottom: 3rem;
 }
 
 .card--info {
-  width: 100%;
-  margin-bottom: 1.8rem;
-  display: grid;
-  grid-template-columns: 10rem 1fr;
+  padding-top: 9rem;
+  text-align: center;
 }
 
-.card--info span:first-child {
+.card--name {
+  display: inline-block;
+  font-size: 2.6rem;
   font-weight: bold;
+  margin-right: 1.2rem;
+}
+
+.card--age {
+  font-size: 2.6rem;
+  font-weight: 200;
+}
+
+.card--city {
+  margin-top: 1.6rem;
+
+  font-size: 1.6rem;
+  font-weight: 200;
+}
+
+.card--list {
+  padding: 4rem 0rem;
+  border-top: 1px solid #cbd5e1;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.card--number {
+  font-size: 2.6rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+
+.card--desc {
+  font-weight: 300;
 }
